@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" />
+    <style>
+        body {
+            font-family: "Roboto", sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #F5F5F5;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        section {
+            margin: 40px 0;
+        }
+
+        h3 {
+            font-size: 22px;
+            font-weight: 500;
+            text-transform: uppercase;
+            color: navy;
+            margin-bottom: 20px;
+        }
+
+        h4 {
+            font-size: 18px;
+            font-weight: 400;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            color: #333;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        #skills ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        #skills li {
+            font-size: 14px;
+            background: navy;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 20px;
+            color: #F5F5F5;
+        }
+
+        a {
+            color: navy;
+            text-decoration: none;
+        }
+
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 100px;
+            margin: 0 auto 20px;
+            overflow: hidden;
+        }
+
+        .profile-image img {
+            width: 100%;
+        }
+
+        footer {
+            font-size: 14px;
+            color: #333;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        body {
+            background-color: #F5F5F5;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            flex-flow: wrap;
+            justify-content: center;
+            align-items: start;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #FFFFFF;
+            border-radius: 10px;
+            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card h2 {
+            color: #212121;
+            font-size: 20px;
+            margin: 0;
+        }
+
+        .card h3 {
+            color: #757575;
+            font-size: 14px;
+            margin: 0;
+            margin-top: 8px;
+        }
+
+        .card p {
+            color: #757575;
+            font-size: 14px;
+            margin: 0px 0;
+        }
+
+        .card button {
+            background-color: #2196F3;
+            border: none;
+            border-radius: 5px;
+            color: #FFFFFF;
+            font-size: 16px;
+            padding: 10px 20px;
+            margin: 10px 0;
+        }
+
+        .card button:hover {
+            background-color: #1976D2;
+            cursor: pointer;
+        }
+
+        .card li {
+            font-size: 16px;
+            text-align: left;
+            color: #333;
+            margin-top: 4px;
+        }
+
+        .float-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 100;
+        }
+
+        .btn-primary {
+            color: #fff;
+            background-color: #1976d2;
+            border-color: #1976d2;
+        }
+
+        .btn-primary:hover {
+            background-color: #0d47a1;
+            border-color: #0d47a1;
+        }
+
+        .rounded-pill {
+            border-radius: 50px;
+            padding: 10px 20px;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+    </style>
+    <title>Ahmad Riza Profile</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="profile-image">
+            <img src="https://i.ibb.co/KbG3X40/Copy-of-IMG-7444.jpg" alt="[Your Name]'s Profile Image" />
+        </div>
+        <h1>Ahmad Riza</h1>
+        <p><em>Android Engineer, Indonesia</em></p>
+
+        <section id="about">
+            <h3>About Me</h3>
+            <p>
+                I am an experienced Android Engineer with a strong understanding of the Android platform and its various
+                components. With a proven track record of designing, developing, and launching successful mobile
+                applications, I am skilled in Java and Kotlin programming languages and have expertise in building
+                applications that integrate with various APIs and web services. I am a self-motivated and
+                detail-oriented individual who is committed to delivering high-quality software solutions that exceed
+                expectations.
+            </p>
+        </section>
+        <section id="experience">
+            <h3>Experience</h3>
+            <div class="card-container">
+                <div class="card">
+                    <h2> ⭐️ Kitabisa.com</h2>
+                    <h3>Android Engineer</h3>
+                    <p>June 2021 - Now</p>
+                    <ul>
+                        <li>Implemented new features and fixed issues on <a href="https://play.google.com/store/apps/details?id=com.kitabisa.android" target="_blank">the Kitabisa app</a> in Kotlin.</li>
+                        <li>Worked with the product team as a Project Information Coordinator (PIC) to understand requirements and provide technical solutions.</li>
+                        <li>Integrated CI/CD pipelines to automate builds and deployments.</li>
+                        <li>Researched and implemented Jetpack Compose into the production feature.</li>
+                        <li>Analyzed errors in Crashlytics and fix them to maintain a 99% crash-free user percentage.</li>
+                        <li>Experimented with and implemented a Gradle dependency catalog to speed up the build time.</li>
+                        <li>Maintained code reliability by keeping up with Android SDK changes and updating the code accordingly.</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h2>KlikFilm.com</h2>
+                    <h3>Part-time IOS Engineer</h3>
+                    <p>June 2021 - Now</p>
+                    <ul>
+                        <li>Developed and maintained the KlikFilm app in Swift.</li>
+                        <li>Rewrited the detail page to optimize the UI for responsiveness across both iPhone and iPad devices.</li>
+                        <li>Worked with Apple FairPlay to securely stream DRM-protected movie content within the app</li>
+                        <li>Handled the movie download service and manage the state to be displayed across the UI</li>
+                        <li>Integrated a live chat service with a Socket connection.</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h2>Kwikku.com</h2>
+                    <h3>Android Engineer</h3>
+                    <p>June 2021 - Now</p>
+                    <ul>
+                        <li>Migrated <a href="https://play.google.com/store/apps/details?id=com.kwikku.android" target="_blank">Kwikku App</a> from Java into a fully Kotlin-based project.</li>
+                        <li>Integrated WorkManager to create a service that downloads novels in the background, even if the app is closed.</li>
+                        <li>Experimented with the Jetpack Navigation component to create features with a single-activity architecture.</li>
+                        <li>Experimented with Hilt to integrate dependency injection into the app.</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h2>Deliv.com</h2>
+                    <h3>Android Engineer</h3>
+                    <p>June 2021 - Now</p>
+                    <ul>
+                        <li>Initiated and led the development of the <a href = "https://play.google.com/store/apps/details?id=id.co.deliv.kios&hl=id&gl=US" target="_blank">Kios Deliv app</a> to transform the company's business model from ride-hailing to multi-payment.</li>
+                        <li>Created custom Bluetooth printer drivers to handle printing of custom payment invoices across multiple device types</li>
+                        <li>Initiated and developed the cashier feature that can be used in offline mode and automatically synced when online</li>
+                        <li>Developed the merchant feature to restock warungs and implemented Google Maps SDK to handle delivery process</li>
+                        <li>Developed the train e-ticket booker feature and created a dynamic seat layout picker.</li>
+                        <li>Implemented Apollo GraphQL.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="skills">
+            <h3>Skills</h3>
+            <ul>
+                <li>Advance Kotlin</li>
+                <li>Advance Java</li>
+                <li>Gihub Action CI/CD</li>
+                <li>MVVM</li>
+                <li>MVI</li>
+                <li>Jetpack Compose</li>
+                <li>Modularization</li>
+                <li>Dagger</li>
+                <li>Hilt</li>
+                <li>Gradle Kotlin Script</li>
+                <li>Kotest Unit Test Framework</li>
+                <li>Espresso UI Test</li>
+                <li>Apollo GraphQL</li>
+                <li>Room</li>
+                <li>Jira Integration</li>
+            </ul>
+        </section>
+
+        <div class="float-button">
+            <a href="https://www.linkedin.com/in/ahmadriza/" target="_blank">
+                <button class="btn btn-primary rounded-pill">
+                    <span>Connect</span>
+                </button>
+            </a>
+        </div>
+        <footer>
+            &copy; Ahmad Riza | <a href="https://www.linkedin.com/in/ahmadriza/" target="_blank">Connect with me</a>
+        </footer>
+    </div>
+</body>
+
+</html>
