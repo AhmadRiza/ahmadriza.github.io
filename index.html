@@ -17,7 +17,7 @@
         .container {
             max-width: 800px;
             margin: 0 auto;
-            padding: 40px 20px;
+            padding: 80px 20px;
             text-align: center;
         }
 
@@ -36,7 +36,7 @@
             font-size: 20px;
             font-weight: 500;
             text-transform: uppercase;
-            color: navy;
+            color: #000080;
             font-weight: 700;
             margin-bottom: 20px;
         }
@@ -51,7 +51,6 @@
             font-size: 16px;
             color: #333;
             line-height: 1.5;
-            margin-bottom: 20px;
         }
 
         #skills ul {
@@ -163,29 +162,49 @@
             margin-top: 4px;
         }
 
-        .float-button {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            z-index: 100;
+        #techstack {
+            margin: 12px 0px -5px 0px;
         }
 
-        .btn-primary {
-            color: #fff;
-            background-color: #1976d2;
-            border-color: #1976d2;
+        .social-media-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 5px;
         }
 
-        .btn-primary:hover {
-            background-color: #0d47a1;
-            border-color: #0d47a1;
+        .social-media-list li {
+            display: inline-block;
         }
 
-        .rounded-pill {
-            border-radius: 50px;
-            padding: 10px 20px;
-            font-size: 16px;
-            line-height: 1.5;
+        .social-media-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+        }
+
+        .social-media-button img {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+        }
+
+        .social-media-button:hover {
+            color: navy;
+        }
+
+        .social-media-button:hover::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: navy;
         }
     </style>
     <title>Ahmad Riza Profile</title>
@@ -197,14 +216,42 @@
             <img src="https://i.ibb.co/KbG3X40/Copy-of-IMG-7444.jpg" alt="[Your Name]'s Profile Image" />
         </div>
         <h1>Ahmad Riza</h1>
-        <p><em>Android Engineer, Indonesia</em></p>
+        <p id="techstack"><em>Android Engineer, Indonesia</em></p>
+        <ul class="social-media-list">
+            <li>
+                <a href="mailto:riza.public@gmail.com" target="_blank">
+                    <button class="social-media-button">
+                        <img src="https://i.ibb.co/FHvN1Fz/gmail.png" alt="Email Icon" />
+                        riza.public@gmail.com
+                    </button>
+                </a>
+            </li>
+            <li>
+                <a href="https://wa.me/62895359672090" target="_blank">
+                    <button class="social-media-button">
+                        <img src="https://i.ibb.co/pPzLS5y/whatsapp.png" alt="WhatsApp Icon" />
+                        +62 8953 5967 2090
+                    </button>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/ahmadriza/" target="_blank">
+                    <button class="social-media-button">
+                        <img src="https://i.ibb.co/KhkkG6F/linkedin.png" alt="WhatsApp Icon" />
+                        /in/ahmadriza
+                    </button>
+                </a>
+            </li>
+        </ul>
+
 
         <section id="about">
             <h3>About Me</h3>
             <p>
                 I am an experienced Android Engineer with a strong understanding of the Android platform and its various
                 components. With a proven track record of designing, developing, and launching successful mobile
-                applications, I am skilled in Java and Kotlin programming languages and have expertise in building
+                applications for over 4 years, I am skilled in Java and Kotlin programming languages and have expertise
+                in building
                 applications that integrate with various APIs and web services. I am a self-motivated and
                 detail-oriented individual who is committed to delivering high-quality software solutions that exceed
                 expectations.
@@ -216,7 +263,7 @@
                 <div class="card">
                     <h2>⭐️ PT Kitabisa Indonesia</h2>
                     <h3>Android Engineer</h3>
-                    <p>May 2021 - Now</p>
+                    <p>May 2021 - Now (2y 1m+)</p>
                     <ul>
                         <li>Implemented new features and fixed issues on <a
                                 href="https://play.google.com/store/apps/details?id=com.kitabisa.android"
@@ -236,7 +283,7 @@
                 <div class="card">
                     <h2>PT Falcon / KlikFilm</h2>
                     <h3>Part-time IOS Engineer</h3>
-                    <p>July 2021 - January 2023</p>
+                    <p>July 2022 - January 2023 (6m)</p>
                     <ul>
                         <li>Developed and maintained the KlikFilm app in Swift.</li>
                         <li>Rewrited the detail page to optimize the UI for responsiveness across both iPhone and iPad
@@ -250,7 +297,7 @@
                 <div class="card">
                     <h2>PT Kwikku Media Nusantara</h2>
                     <h3>Android Engineer</h3>
-                    <p>Dec 2020 - May 2021</p>
+                    <p>December 2020 - May 2021 (6m)</p>
                     <ul>
                         <li>Migrated <a href="https://play.google.com/store/apps/details?id=com.kwikku.android"
                                 target="_blank">Kwikku App</a> from Java into a fully Kotlin-based project.</li>
@@ -264,7 +311,7 @@
                 <div class="card">
                     <h2>PT Deliv Tehnologi Indoraya</h2>
                     <h3>Android Engineer</h3>
-                    <p>February 2019 - November 2020</p>
+                    <p>February 2019 - November 2020 (1y 9m)</p>
                     <ul>
                         <li>Led the development of the <a
                                 href="https://play.google.com/store/apps/details?id=id.co.deliv.kios&hl=id&gl=US"
@@ -310,16 +357,8 @@
                 <li>Truncbase Development</li>
             </ul>
         </section>
-
-        <div class="float-button">
-            <a href="https://www.linkedin.com/in/ahmadriza/" target="_blank">
-                <button class="btn btn-primary rounded-pill">
-                    <span>Connect</span>
-                </button>
-            </a>
-        </div>
         <footer>
-            &copy; Ahmad Riza | <a href="https://www.linkedin.com/in/ahmadriza/" target="_blank">Connect with me</a>
+            &copy; Ahmad Riza | <a href="https://ahmadriza.github.io" target="_blank">ahmadriza.github.io</a>
         </footer>
     </div>
 </body>
