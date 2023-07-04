@@ -22,14 +22,22 @@
         }
 
         section {
-            margin: 40px 0;
+            margin: 20px 0;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 20px;
+            margin-bottom: 8px;
         }
 
         h3 {
-            font-size: 22px;
+            font-size: 20px;
             font-weight: 500;
             text-transform: uppercase;
             color: navy;
+            font-weight: 700;
             margin-bottom: 20px;
         }
 
@@ -58,7 +66,7 @@
             font-size: 14px;
             background: navy;
             padding: 10px 20px;
-            margin: 10px;
+            margin: 5px;
             border-radius: 20px;
             color: #F5F5F5;
         }
@@ -95,22 +103,23 @@
         .card-container {
             display: flex;
             flex-wrap: wrap;
-            flex-flow: wrap;
             justify-content: center;
             align-items: start;
             gap: 20px;
+
         }
 
         .card {
             background-color: #FFFFFF;
             border-radius: 10px;
             box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
-            padding: 20px;
+            padding: 16px 16px 16px 0px;
             text-align: center;
-            width: 300px;
-            display: flex;
+            width: 350px;
+            display: block;
             flex-direction: column;
         }
+
 
         .card h2 {
             color: #212121;
@@ -208,13 +217,19 @@
                     <h3>Android Engineer</h3>
                     <p>May 2021 - Now</p>
                     <ul>
-                        <li>Implemented new features and fixed issues on <a href="https://play.google.com/store/apps/details?id=com.kitabisa.android" target="_blank">the Kitabisa app</a> in Kotlin.</li>
-                        <li>Worked with the product team as a Project Information Coordinator (PIC) to understand requirements and provide technical solutions.</li>
+                        <li>Implemented new features and fixed issues on <a
+                                href="https://play.google.com/store/apps/details?id=com.kitabisa.android"
+                                target="_blank">the Kitabisa app</a> in Kotlin.</li>
+                        <li>Worked with the product team as a Project Information Coordinator (PIC) to understand
+                            requirements and provide technical solutions.</li>
                         <li>Integrated CI/CD pipelines to automate builds and deployments.</li>
                         <li>Researched and implemented Jetpack Compose into the production feature.</li>
-                        <li>Analyzed errors in Crashlytics and fix them to maintain a 99% crash-free user percentage.</li>
-                        <li>Experimented with and implemented the Gradle dependency catalog to speed up the build time.</li>
-                        <li>Maintained code reliability by keeping up with Android SDK changes and updating the code accordingly.</li>
+                        <li>Analyzed errors in Crashlytics and fix them to maintain a 99% crash-free user percentage.
+                        </li>
+                        <li>Experimented with and implemented the Gradle dependency catalog to speed up the build time.
+                        </li>
+                        <li>Maintained code reliability by keeping up with Android SDK changes and updating the code
+                            accordingly.</li>
                     </ul>
                 </div>
                 <div class="card">
@@ -223,8 +238,10 @@
                     <p>July 2021 - January 2023</p>
                     <ul>
                         <li>Developed and maintained the KlikFilm app in Swift.</li>
-                        <li>Rewrited the detail page to optimize the UI for responsiveness across both iPhone and iPad devices.</li>
-                        <li>Worked with Apple FairPlay to securely stream DRM-protected movie content within the app</li>
+                        <li>Rewrited the detail page to optimize the UI for responsiveness across both iPhone and iPad
+                            devices.</li>
+                        <li>Worked with Apple FairPlay to securely stream DRM-protected movie content within the app
+                        </li>
                         <li>Handled the movie download service and manage the state to be displayed across the UI</li>
                         <li>Integrated a live chat service with a Socket connection.</li>
                     </ul>
@@ -234,9 +251,12 @@
                     <h3>Android Engineer</h3>
                     <p>Dec 2020 - May 2021</p>
                     <ul>
-                        <li>Migrated <a href="https://play.google.com/store/apps/details?id=com.kwikku.android" target="_blank">Kwikku App</a> from Java into a fully Kotlin-based project.</li>
-                        <li>Integrated WorkManager to create a service that downloads novels in the background, even if the app is closed.</li>
-                        <li>Experimented with the Jetpack Navigation component to create features with a single-activity architecture.</li>
+                        <li>Migrated <a href="https://play.google.com/store/apps/details?id=com.kwikku.android"
+                                target="_blank">Kwikku App</a> from Java into a fully Kotlin-based project.</li>
+                        <li>Integrated WorkManager to create a service that downloads novels in the background, even if
+                            the app is closed.</li>
+                        <li>Experimented with the Jetpack Navigation component to create features with a single-activity
+                            architecture.</li>
                         <li>Experimented with Hilt to integrate dependency injection into the app.</li>
                     </ul>
                 </div>
@@ -245,10 +265,16 @@
                     <h3>Android Engineer</h3>
                     <p>February 2019 - November 2020</p>
                     <ul>
-                        <li>Initiated and led the development of the <a href = "https://play.google.com/store/apps/details?id=id.co.deliv.kios&hl=id&gl=US" target="_blank">Kios Deliv app</a> to transform the company's business model from ride-hailing to multi-payment.</li>
-                        <li>Created custom Bluetooth printer drivers to handle printing of custom payment invoices across multiple device types</li>
-                        <li>Initiated and developed the cashier feature that can be used in offline mode and automatically synced when online</li>
-                        <li>Developed the merchant feature to restock warungs and implemented Google Maps SDK to handle delivery process</li>
+                        <li>Led the development of the <a
+                                href="https://play.google.com/store/apps/details?id=id.co.deliv.kios&hl=id&gl=US"
+                                target="_blank">Kios Deliv app</a> to transform the company's business model from
+                            ride-hailing to multi-payment.</li>
+                        <li>Created custom Bluetooth printer drivers to handle printing of custom payment invoices
+                            across multiple device types</li>
+                        <li>Initiated and developed the cashier feature that can be used in offline mode and
+                            automatically synced when online</li>
+                        <li>Developed the merchant feature to restock warungs and implemented Google Maps SDK to handle
+                            delivery process</li>
                         <li>Developed the train e-ticket booker feature and created a dynamic seat layout picker.</li>
                         <li>Implemented Apollo GraphQL.</li>
                     </ul>
