@@ -17,7 +17,7 @@
         .container {
             max-width: 800px;
             margin: 0 auto;
-            padding: 80px 20px;
+            padding: 40px 20px;
             text-align: center;
         }
 
@@ -26,7 +26,7 @@
         }
 
         h1 {
-            font-size: 32px;
+            font-size: 28px;
             font-weight: 700;
             line-height: 20px;
             margin-bottom: 8px;
@@ -76,8 +76,8 @@
         }
 
         .profile-image {
-            width: 200px;
-            height: 200px;
+            width: 150px;
+            height: 150px;
             border-radius: 100px;
             margin: 0 auto 20px;
             overflow: hidden;
@@ -183,7 +183,8 @@
             align-items: center;
             justify-content: center;
             border: none;
-            background-color: transparent;
+            border-radius: 15px;
+            background-color: rgba(128, 128, 128, 0.108);
             cursor: pointer;
         }
 
@@ -195,8 +196,25 @@
 
         .social-media-button:hover {
             color: navy;
+            font-weight: bold;
         }
 
+        .card {
+            position: relative;
+        }
+
+        .left-content {
+            margin-top: 18px;
+            margin-left: 20px;
+            float: left;
+            width: 40%;
+            text-align: start;
+        }
+
+        .right-content {
+            width: 56%;
+            float: right;
+        }
     </style>
     <title>Ahmad Riza Profile</title>
 </head>
@@ -276,7 +294,9 @@
                     <h3>Part-time IOS Engineer</h3>
                     <p>July 2022 - January 2023 (6m)</p>
                     <ul>
-                        <li>Developed and maintained the KlikFilm app in Swift.</li>
+                        <li>Developed and maintained the <a
+                                href="https://apps.apple.com/id/app/klikfilm/id1057143732?l=id"
+                                target="_blank">KlikFilm</a> app in Swift.</li>
                         <li>Rewrited the detail page to optimize the UI for responsiveness across both iPhone and iPad
                             devices.</li>
                         <li>Worked with Apple FairPlay to securely stream DRM-protected movie content within the app
@@ -319,6 +339,32 @@
                     </ul>
                 </div>
             </div>
+        </section>
+        <section id="education">
+            <h3>Education</h3>
+            <div class="card-container">
+                <div class="card" style="width: 100%">
+                    <div class="left-content">
+                        <h2>Bachelor of Informatics Engineering</h2>
+                        <h3><a href="https://uin-malang.ac.id/" target="_blank">Islamic State University of Maulana
+                                Malik Ibrahim Malang</a></h3>
+                        <p>June 2016 - December 2020</p>
+                    </div>
+                    <div class="right-content">
+                        <ul>
+                            <li>Best graduate with 3.80 GPA</li>
+                            <li>The Leader of <a href="https://informatika.uin-malang.ac.id/mocap/"
+                                    target="_blank">Mobile Community All Platform</a> in 2019</li>
+                            <li>The 1st winner of <a
+                                    href="https://www.goodnewsfromindonesia.id/2017/11/25/serentak-di-10-kota-dilo-hackhaton-2017-tumbuhkan-sumberdaya-digital-indonesia"
+                                    target="_blank">DILo Hackathon 2017 Malang<a /></li>
+                            <li>Developed catalog app for the university library as internship program</li>
+                        </ul>
+                    </div>
+                    <div class="vertical-line"></div>
+                </div>
+            </div>
+        </section>
         </section>
         <section id="skills">
             <h3>Skills</h3>
